@@ -1,0 +1,15 @@
+schema = 1
+id = "office-preview"
+name = "Office 预览"
+version = "0.2.0"
+description = "在 Tern 里原生预览 Word (.docx) 与 Excel (.xlsx)：样式、表格、合并单元格、数字格式、图片、公式。"
+icon = "file"
+host = "host.luau"
+window = "window.luau"
+styles = ["office.css", "chrome.css"]
+
+[[blocks]]
+id = "doc"
+title = "Office 预览"
+files = ["*.docx", "*.docm", "*.dotx", "*.dotm", "*.xlsx", "*.xlsm", "*.xltx", "*.xltm"]
+palette = false

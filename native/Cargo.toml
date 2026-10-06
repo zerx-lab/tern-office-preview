@@ -1,0 +1,24 @@
+[package]
+name = "office-preview"
+version = "0.2.0"
+edition = "2021"
+publish = false
+description = "Renders .docx / .xlsx into Tern view trees for the office-preview plugin"
+
+[[bin]]
+name = "office-preview"
+path = "src/main.rs"
+
+[dependencies]
+zip = { version = "2", default-features = false, features = ["deflate"] }
+roxmltree = "0.20"
+quick-xml = "0.37"
+serde_json = { version = "1", features = ["preserve_order"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "gif", "bmp", "tiff", "webp"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
+panic = "unwind"

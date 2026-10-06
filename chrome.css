@@ -1,0 +1,98 @@
+/* Chrome of the Office preview block: dock buttons, the outline panel, waiting screens.
+   Document content is styled by office.css (generated from native/src/css.rs). */
+
+[data-surface='plugin.office-preview.doc'] .op-btn {
+	padding: 1px 8px;
+	border-radius: 5px;
+	color: var(--t2);
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-btn:hover {
+	background: var(--l1);
+	color: var(--t1);
+}
+
+[data-surface='plugin.office-preview.doc'] .op-btn.off {
+	opacity: 0.35;
+	cursor: default;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-btn.on {
+	background: rgb(33 115 70 / 16%);
+	color: light-dark(#1b6b3f, #7fd3a3);
+}
+
+[data-surface='plugin.office-preview.doc'] .op-cell {
+	max-width: 40%;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--t2);
+	font-size: 12px;
+	font-variant-numeric: tabular-nums;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-zoom {
+	min-width: 48px;
+	text-align: center;
+	font-variant-numeric: tabular-nums;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-pos {
+	color: var(--t3);
+	font-size: 12px;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-fill {
+	flex: 1 1 0;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-wait {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 24px;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-split {
+	display: flex;
+	flex: 1 1 0;
+	min-height: 0;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-ol {
+	flex: 0 0 240px;
+	overflow: auto;
+	padding: 8px 6px;
+	border-right: 1px solid var(--l2);
+	font-size: 12.5px;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-oi {
+	padding: 3px 8px;
+	border-radius: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: var(--t2);
+	cursor: pointer;
+}
+
+[data-surface='plugin.office-preview.doc'] .op-oi:hover {
+	background: var(--l1);
+}
+
+[data-surface='plugin.office-preview.doc'] .op-oi.on {
+	color: var(--accent);
+}
+
+[data-surface='plugin.office-preview.doc'] .op-l2 { padding-left: 20px; }
+[data-surface='plugin.office-preview.doc'] .op-l3 { padding-left: 32px; }
+[data-surface='plugin.office-preview.doc'] .op-l4 { padding-left: 44px; }
+[data-surface='plugin.office-preview.doc'] .op-l5 { padding-left: 56px; }
+[data-surface='plugin.office-preview.doc'] .op-l6 { padding-left: 68px; }
