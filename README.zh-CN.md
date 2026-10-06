@@ -2,6 +2,10 @@
 
 在 Tern 里原生预览 Word（`.docx`）和 Excel（`.xlsx`）文件。插件把样式、表格、合并单元格、数字格式、图片和公式都画成 Tern 原生视图，不调用外部 Office 或浏览器。
 
+![Excel 预览：合并单元格、数字格式、负数红字、选中格与十字高亮](assets/xlsx.png)
+
+![Word 预览：标题、富文本、表格样式、图片、目录](assets/docx.png)
+
 - **打开方式**：在文件面板里点击，或在命令面板「Open file…」里打开、在终端里点击路径、从 Finder 拖入，或运行 `tern open 报告.docx`。这些入口都会进入预览块（`tern.route.open`）。文件右键菜单里也有「Open with Office 预览」。
 - **支持的扩展名**：`docx docm dotx dotm xlsx xlsm xltx xltm`。Office 的锁文件（`~$*.docx`）不会被接管。
 

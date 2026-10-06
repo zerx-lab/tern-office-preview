@@ -4,6 +4,10 @@
 
 Preview Word (`.docx`) and Excel (`.xlsx`) files natively inside the Tern terminal. No Office, no browser, no LibreOffice — a small Rust renderer turns documents into Tern's native views, with styles, tables, merged cells, number formats, images and equations.
 
+![Excel preview in Tern: merged title, number formats, red negatives, cell selection with crosshair highlight](assets/xlsx.png)
+
+![Word preview in Tern: headings, rich text, styled table, image, clickable outline](assets/docx.png)
+
 ## Highlights
 
 - **Just open it** — click in the file panel, `tern open report.docx`, click a path in the terminal, or drag from Finder.
